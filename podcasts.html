@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts</title>
+    <link rel="stylesheet" href="podcasts.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    <link rel="icon" href="./files/teddy_logo_rounded.png" type="image/jpeg"> 
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h2>Παρακάτω θα βρείτε τα εκπληκτικά μας podcasts</h2>
+            <div class="header-button">               
+                <button class="home-btn" onclick="window.location.href='index.html'">Home               
+                    <i class="fas fa-home"></i> 
+                </button>
+            </div>      
+        </div>
+    </header>
+    <main>
+        <section class="sec-container">
+            <div class="welcome">
+                <h1 class="h1-1">Welcome
+                    <img src="./files/welcome.png" alt="welcome" class="welcome-img">
+                </h1>
+                <audio class="welcome-audio" controls controlsList="nodownload">
+                    <source src="./files/welcome.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="pineza">
+                <h1 class="h1-2">Πινέζα
+                    <img src="./files/pineza.png" alt="pineza" class="pineza-img">
+                </h1>
+                <audio class="pineza-audio" controls controlsList="nodownload">
+                    <source src="./files/pineza.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="pineza-remix">
+                <h1 class="h1-3">Πινέζα Remix
+                    <img src="./files/pineza.png" alt="pineza-remix" class="pineza-remix-img">
+                </h1>
+                <audio class="pineza-remix-audio" controls controlsList="nodownload">
+                    <source src="./files/pineza-remix.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="maxairi">
+                <h1 class="h1-4">Μαχαίρι
+                    <img src="./files/maxairi.png" alt="maxairi" class="maxairi-img">
+                </h1>
+                <audio class="maxairi-audio" controls controlsList="nodownload">
+                    <source src="./files/maxairi.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="kolotripida">
+                <h1 class="h1-5">Κολοτρυπίδα
+                    <img src="./files/kolotripida.png" alt="kolotripida" class="kolotripida-img">
+                </h1>
+                 <audio class="kolotripida-audio" controls controlsList="nodownload">
+                    <source src="./files/kolotripida.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="dolofonia">
+                <h1 class="h1-6">Δολοφονία
+                    <img src="./files/dolofonia.png" alt="dolofonia" class="dolofonia-img">
+                </h1>
+                <audio class="dolofonia-audio" controls controlsList="nodownload">
+                    <source src="./files/dolofonia.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+        <p class="text">
+            Για να κατεβάσετε τα ηχητικά μας, παρακαλώ ενεργοποιήστε το premiun, πατώντας <span class="txt">εδώ</span>.
+        </p>
+        <section class="all">
+            <div class="login-container">
+                <form class="login-form">
+                    <div class="onoma-container">
+                        <h1 class="onoma-titlos">Όνομα</h1>
+                        <input type="text" class="onoma-input" placeholder="Γράψε το ονοματάκι σου" required>
+                    </div>
+                    <div class="epitheto-container">
+                        <h1 class="epitheto-titlos">Επώνυμο</h1>
+                        <input type="text" class="epitheto-input" placeholder="Εεεπ, και το επίθετο" required>
+                    </div>
+                    <div class="submit-btn">
+                        <button class="login-btn" type="submit">Πληρωμή</button>
+                    </div>
+                </form> 
+            </div>
+        </section>
+    </main>
+    <script src="podcasts.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('./files/teddy_logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(168, 53, 53);
+}
+
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+header .header-container h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header .header-container .header-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header .header-container .header-button .home-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(19, 113, 221, 0.7);
+    border: 1px solid rgba(10, 1, 1, 0.7);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .header-container .header-button .home-btn:hover{
+    background-color: rgba(19, 113, 221, 0.4);
+    color: white;
+}
+
+header .header-container .header-button .home-btn i{
+    margin-right: 5px;
+}
+
+
+section.sec-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: fit-content;
+    gap: 50px 20px;
+    background-color: rgb(138, 212, 236, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section .welcome{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(106, 90, 205);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+section .welcome .h1-1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+audio.welcome-audio{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+audio.welcome-audio::-webkit-media-controls-panel {
+    background-color: rgb(106, 90, 205, 0.8);
+}
+
+audio.welcome-audio::-webkit-media-controls-play-button,
+audio.welcome-audio::-webkit-media-controls-volume-slider,
+audio.welcome-audio::-webkit-media-controls-timeline {
+    background-color: rgb(106, 90, 205, 0.3);
+    color: white;
+    border-radius: 30px;
+}
+
+section .pineza{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+section .pineza .h1-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+
+audio.pineza-audio{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+audio.pineza-audio::-webkit-media-controls-panel {
+    background-color: rgb(0, 128, 0, 0.8);
+}
+
+audio.pineza-audio::-webkit-media-controls-play-button,
+audio.pineza-audio::-webkit-media-controls-volume-slider,
+audio.pineza-audio::-webkit-media-controls-timeline {
+    background-color: rgb(0, 128, 0, 0.3);
+    border-radius: 30px;
+}
+
+section .pineza-remix .h1-3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+
+section .pineza-remix{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 138, 196);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+audio.pineza-remix-audio{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+audio.pineza-remix-audio::-webkit-media-controls-panel {
+    background-color: rgb(53, 138, 196, 0.8);
+}
+
+audio.pineza-remix-audio::-webkit-media-controls-play-button,
+audio.pineza-remix-audio::-webkit-media-controls-volume-slider,
+audio.pineza-remix-audio::-webkit-media-controls-timeline {
+    background-color: rgb(53, 138, 196, 0.5);
+    border-radius: 30px;
+}
+
+
+section .maxairi{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(165, 42, 42);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+section .maxairi .h1-4{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+audio.maxairi-audio{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+audio.maxairi-audio::-webkit-media-controls-panel {
+    background-color: rgb(165, 42, 42, 0.8);
+}
+
+audio.maxairi-audio::-webkit-media-controls-play-button,
+audio.maxairi-audio::-webkit-media-controls-volume-slider,
+audio.maxairi-audio::-webkit-media-controls-timeline {
+    background-color: rgb(165, 42, 42, 0.1);
+    border-radius: 30px;
+}
+
+section .kolotripida{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+section .kolotripida .h1-5{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+audio.kolotripida-audio{
+    border-radius: 30px;
+}
+
+audio.kolotripida-audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 0, 0, 0.9);
+}
+
+audio.kolotripida-audio::-webkit-media-controls-play-button,
+audio.kolotripida-audio::-webkit-media-controls-volume-slider,
+audio.kolotripida-audio::-webkit-media-controls-timeline {
+    background-color: rgb(255, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+
+section .dolofonia{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 115, 0);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+section .dolofonia .h1-6{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+audio.dolofonia-audio{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+audio.dolofonia-audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 115, 0, 0.8);
+}
+
+audio.dolofonia-audio::-webkit-media-controls-play-button,
+audio.dolofonia-audio::-webkit-media-controls-volume-slider,
+audio.dolofonia-audio::-webkit-media-controls-timeline {
+    background-color: rgb(245, 139, 53, 0.3);
+    border-radius: 30px;
+}
+
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    background-color: rgb(70, 130, 180, 0.8);
+    width: 100%;
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.text .txt{
+    cursor: pointer;
+    padding-left: 5px;
+    font-style: italic;
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.text .txt:hover{
+    color: white;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border-radius: 20px;
+    color: white;
+    display: none;
+}
+
+.all .login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.all .login-form .onoma-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.all .login-form .onoma-container .onoma-input{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    margin-top: 10px;
+}
+
+.all .login-form .onoma-container .onoma-input::placeholder{
+    text-align: center;
+}
+
+.all .login-form .epitheto-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.all .login-form .epitheto-container .epitheto-input{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    margin-top: 10px;
+}
+
+.all .login-form .epitheto-container .epitheto-input::placeholder{
+    text-align: center;
+}
+
+section.all .login-form .submit-btn .login-btn{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 580px){
+    section.sec-container{
+        grid-template-columns: 1fr;
+    }
+
+    .text .txt{
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+}
