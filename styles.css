@@ -209,4 +209,9 @@ footer .social{
     .body-header {
         font-size: 12px;
     }
+
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
